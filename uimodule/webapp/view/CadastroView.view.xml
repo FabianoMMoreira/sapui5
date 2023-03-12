@@ -1,0 +1,32 @@
+<mvc:View controllerName="com.myorg.myUI5App.controller.CadastroView" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" xmlns="sap.m">
+    <Page id="cadastroPage" title="Cadastro">
+    <headerContent>
+          <FlexBox id="flex" class="sapUiSmallMarginBegin sapUiSmallMarginTop" justifyContent="Center" alignItems="Center" direction="Row">
+           <items>
+            <Button id="Graficos" text="Gráficos" press="onGrafPress" />
+            <Button id="Cadastro" text="Cadastre-se" press="onCadastroPress" />
+            <Button id="button1" text="Inicio" press="onInicioPress" />
+            <Button id="button2" icon="sap-icon://bell" press="onPressNotifications" />
+            <Button id="button3" icon="sap-icon://log" press="onPressLogout" />
+           </items>
+          </FlexBox>
+        </headerContent>
+      <content>
+      <HBox id="cadastro" alignItems="Center" justifyContent="Center">
+       <VBox id="cadastrovbox">
+          <Label id="nomeLabel" text="Nome" />
+          <Input id="nomeInput" value="{/nome}" />
+          <Label id="emailLabel" text="E-mail" />
+          <Input id="emailInput" value="{/email}" />
+          <Label id="SenhaLabel" text="Senha" />
+          <Input id="SenhaInput" type="Password" />
+          <Label id="DataLabel" text="Data Nasc" />
+          <Input id="DataInput" type="Date" />
+          <Label id="telefoneLabel" text="Telefone" />
+          <Input id="telefoneInput" value="{/telefone}" />
+        <Button id="Button" text="Enviar" press="onEnviarPress" />
+        </VBox>
+      </HBox>
+      </content>
+    </Page>
+</mvc:View>

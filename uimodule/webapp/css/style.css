@@ -1,0 +1,68 @@
+.MainView {
+    background-image: url(https://raw.githubusercontent.com/Hashtechieofficial/Form-/main/background6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 00px;
+    width: 100%;
+}
+.login {
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 44px;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+}
+.btn2 {
+    width: 100%;
+    height: 40px;
+    border-radius: 44px;
+    background: #b83548;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    top: 10px;
+}
+.nome {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.senha {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}

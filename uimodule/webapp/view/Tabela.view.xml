@@ -1,0 +1,55 @@
+<mvc:View controllerName="com.myorg.myUI5App.controller.Tabela" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page id="Tabela" title="Tabela">
+    
+       <headerContent>
+          <FlexBox id="flex" class="sapUiSmallMarginBegin sapUiSmallMarginTop" justifyContent="Center" alignItems="Center" direction="Row">
+           <items>
+            <Button id="Graficos" text="Gráficos" press="onGrafPress" />
+            <Button id="Cadastro" text="Cadastre-se" press="onCadastroPress" />
+            <Button id="Login" text="Entrar" press="onLoginPress" />
+            <Button id="button1" text="Inicio" press="onInicioPress" />
+            <Button id="button2" icon="sap-icon://bell" press="onPressNotifications" />
+            <Button id="button3" icon="sap-icon://log" press="onPressLogout" />
+           </items>
+          </FlexBox>
+        </headerContent>
+        <content>
+        <HBox id="hboxfull" justifyContent="Center" alignItems="Center" width="100%">
+         <VBox id="vboxfull" justifyContent="Center" alignItems="Center" width="50%">
+            <HBox id="hbox">
+             <Label id="label" text="" />
+               <Toolbar id="toolbar">
+                <SearchField id="field" width="100%" placeholder="Search" />
+               </Toolbar>
+            </HBox>
+            <Table class="sapUiTinyMargin sapUiTinyMarginTop sapUiSmallMarginEnd" id="table" items="{/items}">
+                <columns>
+                    <Column id="column">
+                        <Label id="label1" text="Produtos" />
+                    </Column>
+                    <Column id="column2">
+                        <Label id="label2" text="Quantidade" />
+                    </Column>
+                    <Column id="column3">
+                        <Label id="label3" text="Preço" />
+                    </Column>
+                    <Column id="column4">
+                        <Label id="label4" text="Em Estoque" />
+                    </Column>                   
+                </columns>
+                <items>
+                    <ColumnListItem id="column1">
+                        <cells>
+                            <Text id="text1" text="{col1}" />
+                            <Text id="text2" text="{col2}" />
+                            <Text id="text3" text="{col3}" />
+                            <Text id="text4" text="{col4}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+          </VBox> 
+         </HBox> 
+        </content>
+    </Page>
+</mvc:View>

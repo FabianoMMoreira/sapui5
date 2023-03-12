@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.myorg.myUI5App.controller.MainView" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" xmlns="sap.m">
+    <Page id="MainView" class="MainView">
+    <content>
+      <HBox id="cadastro" alignItems="Center" justifyContent="Center" class="login">
+       <VBox id="cadastrovbox">
+          <HBox id="nome" class="nome">
+          <Label id="nomeLabel" text="Nome" />
+          <Input id="nomeInput" value="{/nome}" />
+          </HBox>
+          <HBox id="senha" class="senha">
+          <Label id="emailLabel" text="Senha" />
+          <Input id="emailInput" value="{/senha}" />
+          </HBox>
+        <Button id="Button" text="Entrar" press="onGrafPress" class="btn" />
+        <Button id="Button2" text="Registre-se" press="onRegisterPress" class="btn2" />
+        
+      </VBox>
+      </HBox>  
+    </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,28 @@
+<mvc:View controllerName="com.myorg.myUI5App.controller.Login" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" xmlns="sap.m">
+    <Page id="Loginpage" title="Login" class="LoginView">
+    <headerContent>
+          <FlexBox id="flex" justifyContent="Center" alignItems="Center" direction="Row" class="Login">
+           <items>
+            <Button id="Graficos" text="Gráficos" press="onGrafPress" />
+            <Button id="Cadastro" text="Cadastre-se" press="onCadastroPress" />
+            <Button id="Login" text="Entrar" press="onLoginPress" />
+            <Button id="button1" text="Inicio" press="onInicioPress" />
+            <Button id="button2" icon="sap-icon://bell" press="onPressNotifications" />
+            <Button id="button3" icon="sap-icon://log" press="onPressLogout" />
+           </items>
+          </FlexBox>
+        </headerContent>
+      <content>
+      
+      <HBox id="cadastro" alignItems="Center" justifyContent="Center" class="login">
+       <VBox id="cadastrovbox">
+          <Label id="nomeLabel" text="Nome" />
+          <Input id="nomeInput" value="{/nome}" />
+          <Label id="emailLabel" text="Senha" />
+          <Input id="emailInput" value="{/senha}" />
+        <Button id="Button" text="Entrar" press="onGrafPress" />
+       </VBox>
+    </HBox>  
+      </content>
+    </Page>
+</mvc:View>
